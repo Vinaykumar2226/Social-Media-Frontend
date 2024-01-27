@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+
+  border-radius: 12px;
+  border: 5px solid rgba(209, 213, 219, 0.3);
+  margin: 15px;
+}
+.coverpage {
+  display: flex;
+  justify-content: center;
+  /* padding: 30px; */
+  flex-direction: column;
+}
+.avatardiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -20%;
+}
+.details {
+  /* position: relative;
+  top: -20%; */
+}
+.posts {
+  /* position: relative;
+  top: -13%; */
+}
+.post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.username {
+  padding-left: 10px;
+}
+.caption {
+  display: flex;
+  padding: 10px;
+}
+.captioncontent {
+  padding: 5px;
+}
+.like {
+  display: flex;
+  justify-content: center;
+}
+.imagediv {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

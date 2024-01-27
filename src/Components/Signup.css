@@ -1,0 +1,7 @@
+.img {
+  display: flex;
+  flex-direction: row;
+}
+.img > input {
+  padding: 10px;
+}

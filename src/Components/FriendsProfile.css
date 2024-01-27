@@ -1,0 +1,10 @@
+.frndscontainerr {
+  width: 50%;
+}
+.frndss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  /* background-color: aqua; */
+}

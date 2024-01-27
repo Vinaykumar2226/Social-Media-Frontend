@@ -1,0 +1,44 @@
+.HomeContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 50%;
+
+  border-radius: 12px;
+  border: 5px solid rgba(209, 213, 219, 0.3);
+  margin: 15px;
+}
+.postdiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  border: 5px solid rgba(209, 213, 219, 0.3);
+}
+.postbtn {
+  /* background-color: aqua; */
+  justify-content: center;
+}
+.postbtn > Button {
+  width: 100%;
+}
+.postdiv > p {
+  color: grey;
+}
+.inpfield {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 25%;
+}
+.inpfield > input {
+  padding: 20px;
+  font-size: large;
+  padding-left: 50%;
+}
+.inpfield > Button {
+  margin-top: 15%;
+}
