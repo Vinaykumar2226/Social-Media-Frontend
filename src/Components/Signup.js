@@ -27,7 +27,7 @@ const defaultTheme = createTheme();
 export default function SignUp() {
   const navigate = useNavigate();
 
-  const [image, setImage] = useState();
+  const [image, setImage] = useState("");
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("");
@@ -35,7 +35,7 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
   const [tick, setTick] = useState(false);
 
-  const onSinUp = () => {
+  async function onSinUp() {
     if (
       (firstName != "") &
       (email != "") &
@@ -52,15 +52,24 @@ export default function SignUp() {
         password: password,
         profilePic: image,
       };
-      axios
-        .post("https://backend-9ye2.onrender.com/signup", dataTosend)
-        .then((res) => console.log(res.data.acknowledged))
-        .then(() => navigate("/"))
-        .catch((err) => toast.error("Upload image less than 50kb"));
+
+      await axios
+        .get(`https://backend-9ye2.onrender.com/login/${email}`)
+        .then((res) => {
+          if (!res.data.users[0]) {
+            axios
+              .post("https://backend-9ye2.onrender.com/signup", dataTosend)
+              .then((res) => console.log(res.data.acknowledged))
+              .then(() => navigate("/"))
+              .catch((err) => toast.error("Upload image less than 50kb"));
+          } else {
+            toast.error("Email already has Account");
+          }
+        });
     } else {
       toast.error("Enter all fields..!");
     }
-  };
+  }
 
   function Imageupload(e) {
     var reader = new FileReader();
