@@ -114,15 +114,10 @@ export default function Login() {
             </Button>
             <ToastContainer />
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
               <Grid item>
-                <Link href="./Signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+                <Button onClick={() => navigate("/Signup")}>
+                  Don't have an account? Sign Up
+                </Button>
               </Grid>
             </Grid>
           </Box>
