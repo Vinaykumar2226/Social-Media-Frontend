@@ -1,5 +1,8 @@
+Social Connektt.. is a typr of Scoial Media Website which includes new Profile creation with profile picture,Bio,location and the posts.And also you can see others profile and their posts in the website.
+Technology Stack Used in this project is React js,Node js,Express js,MongoDB,Rest Api's And Material Ui.
 
-https://social-conekktt.onrender.com
+
+You can open the website using this link: https://social-conekktt.onrender.com
 
 # Getting Started with Create React App
 
